@@ -32,7 +32,7 @@ body{
 
 .acercade{
     height: 700px;
-    background-image: url(/assets/img/bg-port13.jpg);
+    background-image: url(assets/img/bg-port13.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
