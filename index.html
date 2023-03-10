@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles.css">
-
-    <title>Portfolio</title>
 
 </head>
 <body>
@@ -58,6 +58,8 @@
       </div>
   </header>
 
+
+
     <!--About me section-->
   <section>
     <div class="acercade " style="height: 650px; background-image: url(assets/img/bg-port13.jpg);">
@@ -65,25 +67,25 @@
             <div class="home "> 
                 <div class="container">
                     <div class="gneral d-flex justify-content-around">
-                        <div class="img-logo d-flex  mt-5" >
+                        <div class="img-logo justify-content-around d-flex  mt-5" >
                             <div  class=" acercade_img d-flex flex-column justify-content-center ">   
                                 <img class="m-auto d-flex justify-content-between"  src="assets/img/Logo-Portfolio3.png" alt="">
                             </div>
-                            <div class="home__aboutme mt-5 mb-5 text-light ">
-                                <div class="home__description text-dark m-4">
-                                  <h2 class="home__descriotion__title"><span class="typed"></span></h2>
-                                  
-                                  <div class="home__descriotion__title" id="cadenas-texto">
-                                    <p>FrontEnd <i class="txt-change"> Developer. </i> </p>
-                                    <p>FrontEnd <i class="txt-change"> Designer. </i> </p>
-                                    <p>FrontEnd <i class="txt-change"> Coding. </i> </p> <!--  Frontend Developer  -->
-                                  </div>
-                                    
-                                    <p class="home__description_parrafo">Diseño y codifico cosas muy simples y me encanta lo que hago.</p>
+                            <div class=" home__aboutme mt-5 mb-5 text-light ">
+                              <div class="home__description text-dark m-4">
+                                <h2 class="home__descriotion__title"><span class="typed"></span></h2>
+                                
+                                <div class="home__descriotion__title" id="cadenas-texto">
+                                  <p>FrontEnd <i class="txt-change"> Developer. </i> </p>
+                                  <p>FrontEnd <i class="txt-change"> Designer. </i> </p>
+                                  <p>FrontEnd <i class="txt-change"> Coding. </i> </p>
                                 </div>
-                            </div>
+                                  
+                                  <p class="home__description_parrafo">Diseño y codifico cosas muy simples y me encanta lo que hago.</p>
+                              </div>
+                          </div> 
                         </div>
-                    </div>    
+                    </div>   
                 </div>   
             </div>
         </div>
@@ -125,7 +127,7 @@
   </section> -->
 
 <!-- Contacto -->
-  <section class=" mt-n2 mt-sm-0" style=" background-color:#6c757d;">
+  <section class=" mt-n2 mt-sm-0 mb-5" style=" background-color:#6c757d;">
       <div class="container bg-secondary rounded-3 overflow-hidden">
         <div class="row align-items-center">
           <div class="col-xl-4 col-md-5 offset-lg-1">
@@ -144,11 +146,16 @@
         </div>
       </div>
   </section>
-  
-  
+
+  <section class="pb-5 pt-3 container" style="background-color: #c4c4c4;">
+    <span class="text pb-3">Un poco más acerca de lo que hago</span>
+    <div id="products-cards-container"></div>
+  </section>
+
+<script src="app/card.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="/assets/main.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
