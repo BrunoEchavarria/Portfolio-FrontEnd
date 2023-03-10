@@ -1,9 +1,12 @@
 body{
     font-size: 20px;
     text-align:center;
-
-    
 }
+
+
+
+/*-----------------------------------------------------------------*/
+
 .nav-link img{
     width: 35px;
     height: 35px;
@@ -59,6 +62,9 @@ body{
     position: relative;
     box-shadow: black;
 }
+.img-logo{
+    width: -webkit-fill-available;
+}
 .nav-link__name{
     display: none;
 }
@@ -68,21 +74,22 @@ body{
     transition: 1s;
 }
 .profile-decription{
-    border-right: solid black 1px;
+    border: solid black 1px;
     padding: 2rem;
     margin: 3rem;
 }
 .profile-content{
-  display: flex;
+  /* display: flex; */
   flex-direction: row-reverse;  
 }
-
+.profile-img{
+    align-items: center;
+}
 .profile-circle{
     position: relative;
     width: 300px;
     height: 300px;
     overflow: hidden;
-
     border-radius: 50%;
 }
 .profile-circle img{
@@ -109,19 +116,56 @@ body{
     text-align: justify;
     font-size: 1.2rem;
 }
+.info-button{
+    background-color: transparent;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    border: solid 1px rgb(255, 255, 255);
+    text-decoration: none;
+}
+.product-card{
+    padding-top: 2rem;
+}
+.text {
+    background-color: #c4c4c4;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    /* text-transform: uppercase; */
+    font-family: verdana;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
     .img-logo{
 
         flex-direction: column;
         width: 300px;
         height: auto;
+        align-items: center;
     }
     .home__aboutme{
-        width: auto;
+        width: 350px;
         height: auto;
-        background-color: transparent;
+        /* background-color: transparent; */
         
     }
     .acercade_img{
@@ -150,7 +194,6 @@ body{
     }
     .profile-decription {
         margin: 0px;
-        border: solid black 1px;
     }
     .profile-circle{
         width: 220px;
@@ -161,4 +204,14 @@ body{
         width: 300px;
         height: 300px;
     }
+    .product-header{
+        width: 35vh;
+    }
+
+}
+@media (min-width: 992px){
+    .profile-content{
+        display: flex;
+    } 
+
 }
