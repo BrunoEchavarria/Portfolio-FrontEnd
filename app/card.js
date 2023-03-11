@@ -20,7 +20,7 @@ const valuesCards = [{
 ]
 
 function returnCards(valuesCards) {
-  return "<div class=\"products-cards pt-5 d-sm-block d-flex justify-content-around d-lg-flex justify-content-evenly\">" + valuesCards.map(valuesCard => `
+  return "<div class=\"products-cards pt-5 d-block d-sm-block justify-content-around d-lg-flex justify-content-evenly\">" + valuesCards.map(valuesCard => `
   <div class="d-flex justify-content-around mb-1">
     <div class="product-header d-flex flex-column justify-content-around text-white" style=" border-radius:5px; width: 35vh; height: 350px; background-image: url(${valuesCard.image}); background-size: cover;">
         <h4>${valuesCard.title}</h4>
