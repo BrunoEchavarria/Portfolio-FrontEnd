@@ -1,18 +1,18 @@
 const container = document.getElementById('products-cards-container');
 const valuesCards = [{
-    image: '/assets/img/hamb.jpg',
+    image: 'assets/img/hamb.jpg',
     title: 'Mr. Burguer',
     content: 'Nacimos en el 2001 en Avellaneda, provenientes de una extensa tradición gastronómica familiar.',
     btnlink:"https://mrmurger.000webhostapp.com/",
   },
   {
-    image: '/assets/img/innpulsateens.jpeg',
+    image: 'assets/img/innpulsateens.jpeg',
     title: 'Innpulsate Teens',
     content: 'Un concurso que premia las ideas innovadoras con el potencial de cambiar el mundo.',
     btnlink:"https://innpulsate.ar/teens",
   },
   {
-    image: '/assets/img/GitHub-Logo-21.png',
+    image: 'assets/img/GitHub-Logo-21.png',
     title: 'GitHub',
     content: 'Por si te interesa saber un poco mas acerca de lo que hago...',
     btnlink:"https://github.com/BrunoEchavarria",
