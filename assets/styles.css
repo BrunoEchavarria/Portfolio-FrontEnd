@@ -127,12 +127,11 @@ body{
 .product-card{
     padding-top: 2rem;
 }
-.text {
+/* .text {
     background-color: #c4c4c4;
     top: 50%; 
     right: 50%;
     transform: translate(50%,-50%);
-    /* text-transform: uppercase; */
     font-family: verdana;
     font-size: 1.5rem;
     font-weight: 700;
@@ -151,6 +150,36 @@ body{
     1px 22px 10px rgba(16,16,16,0.2),
     1px 25px 35px rgba(16,16,16,0.2),
     1px 30px 60px rgba(16,16,16,0.4);
+} */
+.galeria{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 400px;
+}
+.galeria img{
+    width: 15%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+
+.galeria img:hover{
+    width: 30%;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.section-galeria{
+    background-color: rgb(222, 250, 215);
+    min-height: 79vh;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 @media (max-width: 768px) {
@@ -207,7 +236,21 @@ body{
     .product-header{
         width: 35vh;
     }
-
+    .galeria{
+        display: block;
+        height: auto;
+    }
+    .galeria img{
+        width: 345px;
+        height: 400px;
+        object-fit: cover;
+        transition: all 0s ease-in-out;
+        padding-bottom: 1rem;
+    }
+    .galeria img:hover{
+        width: 100%;
+    }
+ 
 }
 @media (min-width: 992px){
     .profile-content{
