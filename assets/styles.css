@@ -206,16 +206,6 @@ body{
     cursor: pointer;
 }
 
-.image{
-    width: 250px;
-    height: 300px;
-    background-size: cover;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-
 }
 .image img{
     display: flex;
