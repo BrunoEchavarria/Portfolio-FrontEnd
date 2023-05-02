@@ -265,21 +265,6 @@ body{
     .product-header{
         width: 35vh;
     }
-    .galeria{
-        display: block;
-        height: auto;
-    }
-    .galeria img{
-        width: 345px;
-        height: 400px;
-        object-fit: cover;
-        transition: all 0s ease-in-out;
-        padding-bottom: 1rem;
-    }
-    .galeria img:hover{
-        width: 100%;
-    }
- 
 }
 @media (min-width: 992px){
     .profile-content{
