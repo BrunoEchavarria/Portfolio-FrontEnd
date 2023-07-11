@@ -151,12 +151,17 @@ body{
     border-bottom: solid currentColor;
 }
 .img-hover:hover{
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
     transition: 1s;
     cursor:pointer;
     box-shadow: 1px;
     filter: drop-shadow(20px 20px 10px currentColor);
+}
+
+/*-------------  form-contacto  ----------------*/
+.txtContacto{
+    font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
