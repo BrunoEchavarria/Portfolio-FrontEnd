@@ -180,39 +180,51 @@
       </div>
 
       <!-- Contact form -->
-      <form class="d-flex flex-column formulario col-xl-7 col-md-8 offset-xl-1 needs-validation" id="formulario" action="https://formsubmit.co/jp2949374@gmail.com" method="POST">
-        <div class="row ">
-          <div class="formulario__grupo" id="grupo__nombre">
-            <label for="nombre" class="d-flex justify-content-start formulario__label">Nombre</label>
-            <div class="formulario__grupo-input">
-              <input type="text" style="border: solid 1px;" class="formulario__input rounded-2" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+      <form action="" class="formulario col-md-8" id="formulario">
+  
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <div class="formulario__grupo" id="grupo__correo">
-            <label for="correo" class="d-flex justify-content-start formulario__label">Correo Electrónico</label>
-            <div class="formulario__grupo-input">
-              <input type="email" style="border: solid 1px;" class="formulario__input rounded-2" name="correo " id="correo" placeholder="correo@correo.com">
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-          </div>
-          <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="d-flex justify-content-start formulario__label">Teléfono</label>
-            <div class="formulario__grupo-input">
-              <input type="text" style="border: solid 1px;" class="formulario__input rounded-2" name="telefono " id="telefono" placeholder="4491234567">
-              <i class="formulario__validacion-estado fas fa-times-circle"></i>
-            </div>
-            <p class="formulario__input-error">El telefono solo puede contener números y el maximo son 14 dígitos.</p>
-          </div>
-            <div class="col-12 mb-5">
-            <label for="message" class="d-flex justify-content-start formulario__label fs-base d-flex">Message</label>
-            <textarea name="comentarios " id="message" style="border: solid 1px;" class="form-control form-control-lg" rows="4"></textarea>
-            <div class="invalid-feedback">Please write your message!</div>
-          </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
         </div>
-        <input type="submit" value="Enviar" style="width: 150px; margin: auto;" class="btn btn-dark btn-animate btn-lg shadow-primary">Enviar ;)</input>
+  
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+          <label for="correo" class="formulario__label">Correo Electrónico</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+  
+        <!-- Grupo: Teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+          <label for="telefono" class="formulario__label">Teléfono</label>
+          <div class="formulario__grupo-input pb-2">
+            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+        </div>
+        
+        <div class="formulario-grupo" id="grupo__texto">
+          <label for="mensaje" class="formulario__label">Escribe tu mensaje</label>
+          <textarea type="text" class="formulario__texto w-100" name="" id=""></textarea>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+  
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
       </form>
     </div>
   </section>
