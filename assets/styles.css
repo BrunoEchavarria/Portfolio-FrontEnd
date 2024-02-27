@@ -262,8 +262,10 @@ body{
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
+    margin-top: 1rem;
+	font-size: 18px;
+	background-color: #119200;
+    border-radius: 5px;
 	display: none;
 }
 
