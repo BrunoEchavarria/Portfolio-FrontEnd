@@ -11,7 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4658b9d0ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/styles.css">
+      <!-- scripts envio de formulario -->
+      <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+      <script type="text/javascript">
+        emailjs.init('eMo4Ty35GSe9uH5wK')
+      </script>
 </head>
 <body>
     <!-- header section-->
@@ -180,41 +186,41 @@
       </div>
 
       <!-- Contact form -->
-      <form action="" class="formulario col-md-8" id="formulario">
+      <form class="formulario col-md-8" id="form">
   
         <!-- Grupo: Nombre -->
-        <div class="formulario__grupo" id="grupo__nombre">
-          <label for="nombre" class="formulario__label">Nombre</label>
+        <div class="formulario__grupo field" id="grupo__nombre">
+          <label for="from_name" class="formulario__label">Nombre</label>
           <div class="formulario__grupo-input">
-            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+            <input type="text" class="formulario__input" name="from_name" id="from_name" placeholder="John Doe">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
         </div>
   
         <!-- Grupo: Correo Electronico -->
-        <div class="formulario__grupo" id="grupo__correo">
-          <label for="correo" class="formulario__label">Correo Electrónico</label>
+        <div class="formulario__grupo field" id="grupo__correo">
+          <label for="email" class="formulario__label">Correo Electrónico</label>
           <div class="formulario__grupo-input">
-            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+            <input type="text" class="formulario__input" name="email" id="email" placeholder="correo@correo.com">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
         </div>
   
         <!-- Grupo: Teléfono -->
-        <div class="formulario__grupo" id="grupo__telefono">
-          <label for="telefono" class="formulario__label">Teléfono</label>
+        <div class="formulario__grupo field" id="grupo__telefono">
+          <label for="phone" class="formulario__label">Teléfono</label>
           <div class="formulario__grupo-input pb-2">
-            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+            <input type="text" class="formulario__input" name="phone" id="phone" placeholder="4491234567">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
         </div>
         
-        <div class="formulario-grupo" id="grupo__texto">
-          <label for="mensaje" class="formulario__label">Escribe tu mensaje</label>
-          <textarea type="text" class="formulario__texto w-100" name="" id=""></textarea>
+        <div class="formulario-grupo field" id="grupo__texto">
+          <label for="message" class="formulario__label">Escribe tu mensaje</label>
+          <textarea type="text" class="formulario__texto w-100" name="message" id="message"></textarea>
         </div>
 
         <div class="formulario__mensaje" id="formulario__mensaje">
@@ -222,7 +228,7 @@
         </div>
   
         <div class="formulario__grupo formulario__grupo-btn-enviar">
-          <button type="submit" class="formulario__btn">Enviar</button>
+          <input class="formulario__btn" type="submit" id="button" value="Enviar email" >
           <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
         </div>
       </form>
@@ -260,6 +266,8 @@
   <script src="assets/main.js"></script>
   <script src="app/formulario.js"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+  <script src="app/script.js"></script>
 
 </body>
 </html>
